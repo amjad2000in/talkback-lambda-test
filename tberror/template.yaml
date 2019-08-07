@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  SAM template for talkback_error
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 30
+
+Resources:
+  TBErrorFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: talkback_error/
+      Handler: app.lambda_handler
+      Runtime: python3.6
+      Role: arn:aws:iam::813736767038:role/talkback-pipeline
+      MemorySize: 128
+      Environment:
+        Variables:
+          STAGE: prod
+
+Outputs:
+  TBErrorFunction:
+    Description: "TB Error Lambda Function ARN"
+    Value: !GetAtt TBErrorFunction.Arn
