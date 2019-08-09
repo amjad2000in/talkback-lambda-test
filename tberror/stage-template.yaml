@@ -15,11 +15,13 @@ Resources:
       CodeUri: talkback_error/
       Handler: app.lambda_handler
       Runtime: python3.6
-      Role: arn:aws:iam::813736767038:role/talkback-pipeline
+#      Role: arn:aws:iam::813736767038:role/talkback-pipeline
+      Role: 'arn:aws:iam::584376755109:role/MyLambdaRole'
       MemorySize: 128
       Environment:
         Variables:
           STAGE: stage
+          REGION: ap-south-1
 
 Outputs:
   StageTBErrorFunction:
