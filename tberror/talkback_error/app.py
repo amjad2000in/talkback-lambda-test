@@ -3,7 +3,7 @@ from talkback import TBProject, TBCache
 
 
 class TBError(TBProject):
-    def run_job(self, s3_feedback, debug=False):
+    def run_job(self, s3_feedback, debug=True):
         pass
 
 
