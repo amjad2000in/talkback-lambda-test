@@ -9,5 +9,5 @@ phases:
 artifacts:
   type: zip
   files:
-    - stage-template.yaml
-    - outputSamTemplate.yaml
+    - ./tberror/stage-template.yaml
+    - ./tberror/outputSamTemplate.yaml
