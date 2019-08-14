@@ -4,9 +4,8 @@ phases:
     runtime-versions:
       python: 3.7
     commands:
-#      - aws cloudformation package --template-file ./tberror/stage-template.yaml --s3-bucket crosstalk-lambda-artifacts --output-template-file outputSamTemplate.yaml
-      - sam package --template-file ./tberror/stage-template.yaml --s3-bucket crosstalk-lambda-artifacts --output-template-file outputSamTemplate.yaml
-artifacts:
+      - aws cloudformation package --template-file ./tberror/stage-template.yaml --s3-bucket crosstalk-lambda-artifacts --output-template-file outputSamTemplate.yaml
+      - sam build --manifest ./tberror/talkback_error/requirements.txt
   type: zip
   files:
     - stage-template.yaml
