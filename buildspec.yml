@@ -9,6 +9,4 @@ phases:
 artifacts:
   type: zip
   files:
-    - ./tberror/stage-template.yaml
-    - outputSamTemplate.yaml
-    - ./tberror/testfile.txt
+    - '**/*'
