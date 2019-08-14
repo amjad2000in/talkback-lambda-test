@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+talkback/StreamingMultipartUpload.py
+talkback/TBProject.py
+talkback/__init__.py
+talkback/version.py
+talkback.egg-info/PKG-INFO
+talkback.egg-info/SOURCES.txt
+talkback.egg-info/dependency_links.txt
+talkback.egg-info/not-zip-safe
+talkback.egg-info/requires.txt
+talkback.egg-info/top_level.txt

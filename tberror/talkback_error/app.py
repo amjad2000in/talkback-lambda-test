@@ -1,5 +1,5 @@
 import json
-#from talkback import TBProject, TBCache
+from talkback import TBProject, TBCache
 
 
 class TBError(TBProject):
@@ -12,7 +12,7 @@ tbcache = TBCache()
 
 def lambda_handler(event, context):
     global tbcache
-tamil
+
     tberror = TBError(tbcache)
     tberror.set_event(event, context)
 
