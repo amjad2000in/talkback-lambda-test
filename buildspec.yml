@@ -10,4 +10,4 @@ artifacts:
   type: zip
   files:
     - ./tberror/stage-template.yaml
-    - ./tberror/outputSamTemplate.yaml
+    - outputSamTemplate.yaml
