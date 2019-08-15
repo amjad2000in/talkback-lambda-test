@@ -4,8 +4,8 @@ phases:
     runtime-versions:
       python: 3.7
     commands:
-      
-      - yum install zip
+
+      - ping 8.8.8.8
   pre_build:
     commands:
       - pip install virtualenv
