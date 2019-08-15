@@ -4,8 +4,8 @@ phases:
     runtime-versions:
       python: 3.7
     commands:
+      - yum install rpm-build make gcc glibc -y
 
-      
   pre_build:
     commands:
       - pip install virtualenv
