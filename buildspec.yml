@@ -4,8 +4,8 @@ phases:
     runtime-versions:
       python: 3.7
     commands:
-      - apt-get update
-      - apt-get install zip
+      - yum update
+      - yum install zip
   pre_build:
     commands:
       - pip install virtualenv
