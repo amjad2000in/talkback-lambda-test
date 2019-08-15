@@ -4,7 +4,7 @@ phases:
     runtime-versions:
       python: 3.7
     commands:
-      - sudo yum update -y
+      - yum update -y
       - yum install zip
   pre_build:
     commands:
